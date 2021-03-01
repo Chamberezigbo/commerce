@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Olix</title> 
+  <meta charset="utf-8">   
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="res/bootstrap/css/bootstrap.css">
+  	<link rel="stylesheet" href="res/fontawesome/css/all.css">
+  	<link rel="stylesheet" href="res/css/style.css">  
+</head>     
+<body>   
+
+  <!-- navbar --> 
+	
+    <nav class="navbar navbar-expand-lg navbar-light nav-bg fixed-top shadow">
+          <a class="navbar-brand ml-sm-3" href="#">
+              <span class="text-dark" style="font-family:dancing-script">OL</span><span class="text-dark" style="font-family:dancing-script">IX </span>
+          </a>
+              <ul class="nav">
+                <li class="">
+                   <a href="#" class=" text-dark font-italic d-none">Shop better..Shop faster</a>
+                </li>
+              </ul>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item active">  
+                <a class="nav-link ml-sm-3" href="#home">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ml-sm-3 " href="about">About</a>
+              </li>
+              <li class="nav-item">
+                <!-- <a class="nav-link ml-sm-3" href="#">Shop</a> -->
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link  ml-sm-3 dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Categories
+                </a> 
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Men</a>
+                  <a class="dropdown-item" href="#">Women</a>
+                  <a class="dropdown-item" href="#">Kids</a>
+                  <a class="dropdown-item" href="#">Unisex</a>
+                </div>  
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ml-sm-3" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+               <a href="#" class=" nav-link ml-sm-3 text-white font-weight-bold"><i id="cart" class="fas fa-cart-plus text-dark">0</i></a>
+              </li>
+            </ul>
+
+              <form class="form-inline">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search products" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-info" type="button">search</button>
+                    </div>
+                  </div>
+              </form>
+         </div>
+    </nav>
+
+   
+  <!--navbar---->
+
+  
+      <div id="carouselExampleControls" class="carousel slide mt-5" data-mdb-ride="carousel">  
+        <div class="carousel-inner">
+          <div class="carousel-item active"> 
+            <img src="images/unisex.jpg" class="d-block w-100" alt="..."/>
+          </div> 
+        </div>
+      </div>   
+      
+      <div class="text-center mt-4"> 
+        <h1 style="font-family:dancing-script">SHOP NOW!!!!!!!!!</h1>
+      </div> 
+      
+      <div class="ml-sm-5 mt-5 mb-3 d-flex justify-content-between container">
+         <div class="flex-item">
+            <h2 style="font-family:dancing-script">Latest Products...</h2>
+          </div>
+      </div> 
+
+           <div class="container">  
+             <div class="row mb-5">
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                      <img src="images/c2.jpg" class="img-fluid ">
+                      <p class="text-center" id="item">Vintage Shirt</p>   
+                      <i class="fas fa-star display-6 text-info"></i>
+                      <i class="fas fa-star display-6 text-info"></i>
+                      <i class="fas fa-star display-6 text-info"></i>
+                      <i class="fas fa-star display-6 text-info"></i>
+                      <p>$ <span id="price">17.20</span> </p>
+                      <button class="btn btn-outline-dark my-2 my-sm-0 bg-light" type="submit" onclick="sample()">Add to cart</button>
+                    </div>
+                    <div class="col-sm-3">
+                         <img src="images/c6.jpeg" class="img-fluid">
+                         <p class="text-center" id="item">Gradient Shirt</p>
+                         <i class="fas fa-star display-6 text-info"></i>
+                         <i class="fas fa-star display-6 text-info"></i>
+                         <i class="fas fa-star display-6 text-info"></i>
+                         <i class="fas fa-star display-6 text-info"></i>
+                         <p>$ <span id="price">20.20</span> </p>
+                         <button class="btn btn-outline-dark my-2 my-sm-0 bg-light" type="submit" onclick="sample()">Add to cart</button>
+                    </div>
+                    <div class="col-sm-3">
+                         <img src="images/c4.jpg" class="img-fluid">
+                         <p class="text-center" id="item">Smiley T-Shirt</p>
+                         <i class="fas fa-star display-6 text-info"></i>
+                         <i class="fas fa-star display-6 text-info"></i>
+                         <i class="fas fa-star display-6 text-info"></i>
+                         <i class="fas fa-star display-6 text-info"></i>
+                         <p>$<span id="price">12.21</span></p>
+                         <button class="btn btn-outline-dark my-2 my-sm-0 bg-light" type="submit" onclick="cart()">Add to cart</button>
+                    </div>
+                    <div class="col-sm-3">
+                       <img src="images/c5.jpg" class="img-fluid">
+                       <p class="text-center" id="item">Custom T-Shirt</p>
+                       <i class="fas fa-star display-6 text-info"></i>
+                       <i class="fas fa-star display-6 text-info"></i>
+                       <i class="fas fa-star display-6 text-info"></i>
+                       <i class="fas fa-star display-6 text-info"></i>
+                       <p>$<span id="price">16.22</span></p>
+                       <button class="btn btn-outline-dark my-2 my-sm-0 bg-light" type="submit" onclick="cart()">Add to cart</button>
+                    </div>
+              </div>
+          </div>
+     
+          <div class="container">
+             <div class="row mb-5">
+                  <div class="col-sm-3">
+                    <img src="images/c7.jpg" class="img-fluid ">
+                    <p class="text-center" id="item">Vintage Shirt</p>
+                    <i class="fas fa-star display-6 text-info"></i>
+                    <i class="fas fa-star display-6 text-info"></i>
+                    <i class="fas fa-star display-6 text-info"></i>
+                    <i class="fas fa-star display-6 text-info"></i>
+                    <p>$<span id="price">19.21</span></p>
+                    <button class="btn btn-outline-dark my-2 my-sm-0 bg-light" type="submit" onclick="cart()">Add to cart</button>
+                  </div>
+                  <div class="col-sm-3">
+                       <img src="images/c11.jpg" class="img-fluid">
+                       <p class="text-center" id="item">Cashmere  Sweater</p>
+                       <i class="fas fa-star display-6 text-info"></i>
+                       <i class="fas fa-star display-6 text-info"></i>
+                       <i class="fas fa-star display-6 text-info"></i>
+                       <i class="fas fa-star display-6 text-info"></i>
+                       <p>$<span id="price">11.00</span></p>
+                       <button class="btn btn-outline-dark my-2 my-sm-0 bg-light" type="submit" onclick="cart()">Add to cart</button>
+                  </div>
+                  <div class="col-sm-3"> 
+                       <img src="images/c9.jpg" class="img-fluid">
+                       <p class="text-center" id="item">Sweat-Shirt</p>
+                       <i class="fas fa-star display-6 text-info"></i>
+                       <i class="fas fa-star display-6 text-info"></i>
+                       <i class="fas fa-star display-6 text-info"></i>
+                       <i class="fas fa-star display-6 text-info"></i>
+                       <p>$<span id="price">14.40</span></p>
+                       <button class="btn btn-outline-dark my-2 my-sm-0 bg-light" type="submit"onclick="cart()">Add to cart</button>
+                  </div>
+                  <div class="col-sm-3">
+                       <img src="images/c3.jpg" class="img-fluid">
+                       <p class="text-center" id="item">Custom Print </p>
+                       <i class="fas fa-star display-6 text-info"></i>
+                       <i class="fas fa-star display-6 text-info"></i>
+                       <i class="fas fa-star display-6 text-info"></i>
+                       <i class="fas fa-star display-6 text-info"></i>
+                       <p>$<span id="price">16.30</span></p>
+                       <button class="btn btn-outline-dark my-2 my-sm-0 bg-light" type="submit" onclick="cart()">Add to cart</button>
+                  </div>
+              </div>
+          </div>
+
+  
+
+  <div id="carouselExampleControls" class="carousel slide mt-5" data-mdb-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/group2.jpg" class="d-block w-100" alt="..."/>
+          </div>
+        </div>
+  </div>
+          
+
+      <div class="ml-sm-5 mt-5 mb-3 d-flex justify-content-between container">
+         <div class="flex-item">
+            <h1 style="font-family:dancing-script">Hot Trend...</h1>
+          </div> 
+      </div> 
+           <div class="container">
+             <div class="row mb-4">
+                    <div class="col-sm-4">
+                      <img src="images/bag.png" class="img-fluid ">
+                      <p class="text-center">The ReNew Transit Bag</p>
+                      <i class="fas fa-star display-6 text-info"></i>
+                      <i class="fas fa-star display-6 text-info"></i>
+                      <i class="fas fa-star display-6 text-info"></i>
+                      <i class="fas fa-star display-6 text-info"></i>
+                      <p>$33.00</p>
+                    </div>
+                    <div class="col-sm-4">
+                         <img src="images/shoe.jpg" class="img-fluid">
+                         <p class="text-center">The Forever Sneakers</p>
+                         <i class="fas fa-star display-6 text-info"></i>
+                         <i class="fas fa-star display-6 text-info"></i>
+                         <i class="fas fa-star display-6 text-info"></i>
+                         <i class="fas fa-star display-6 text-info"></i>
+                         <p>$21.90</p>
+                    </div>
+                    <div class="col-sm-4">
+                         <img src="images/shoe2.jpg" class="img-fluid">
+                         <p class="text-center">Forever Sneakers (Navy Blue)</p>
+                         <i class="fas fa-star display-6 text-info"></i>
+                         <i class="fas fa-star display-6 text-info"></i>
+                         <i class="fas fa-star display-6 text-info"></i>
+                         <i class="fas fa-star display-6 text-info"></i>
+                         <p>$10.00</p>
+                    </div>
+              </div>
+          </div>
+
+
+      <div class="ml-sm-5 mt-5 mb-3 d-flex justify-content-between container">
+          <div class="flex-item">
+            <h1 style="font-family:dancing-script">Best Seller...</h1>
+          </div> 
+      </div> 
+
+      <div class="container">
+             <div class="row mb-4">
+                    <div class="col-sm-4">
+                      <img src="images/c14.jpg" class="img-fluid ">
+                      <p class="text-center">The Perform Pocket Jeans</p>
+                      <i class="fas fa-star display-6 text-info"></i>
+                      <i class="fas fa-star display-6 text-info"></i>
+                      <i class="fas fa-star display-6 text-info"></i>
+                      <i class="fas fa-star display-6 text-info"></i>
+                      <p>$13.22</p>
+                    </div>
+                    <div class="col-sm-4">
+                         <img src="images/best8.jpg" class="img-fluid">
+                         <p class="text-center">The Forever Sneakers</p>
+                         <i class="fas fa-star display-6 text-info"></i>
+                         <i class="fas fa-star display-6 text-info"></i>
+                         <i class="fas fa-star display-6 text-info"></i>
+                         <i class="fas fa-star display-6 text-info"></i>
+                         <p>$19.70</p>
+                    </div>
+                    <div class="col-sm-4">
+                         <img src="images/best4.jpg" class="img-fluid">
+                         <p class="text-center">Human Kid Face Mask</p>
+                         <i class="fas fa-star display-6 text-info"></i>
+                         <i class="fas fa-star display-6 text-info"></i>
+                         <i class="fas fa-star display-6 text-info"></i>
+                         <i class="fas fa-star display-6 text-info"></i>
+                         <p>$31.43</p>
+                    </div>
+              </div>
+          </div>
+
+
+      <!-- category sect -->
+  <section class="category-bg">
+    <div class="container text-dark">
+      <div class="row py-5">
+        <div class="col-md-4 col-sm-12 text-center">
+          <i class="fas fa-shipping-fast display-4 mb-2 text-info"></i>
+          <h3 style="font-family:dancing-script">Shipping Method</h3>
+        </div>
+        <div class="col-md-4 text-center ">
+          <i class="fas fa-dollar-sign display-4 mb-2 text-info"></i>
+          <h3 style="font-family:dancing-script">100% Money Back</h3>
+        </div>
+        <div class="col-md-4 text-center">
+          <i class="fas fa-rss display-4 mb-2 text-info"></i>
+          <h3 style="font-family:dancing-script">Online Support 24/7</h3>        
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+      <div class="row mb-5">   
+            <div class="col-sm-3 mt-4">
+                <img src="images/p1.png" class="img-fluid ">
+            </div>
+            <div class="col-sm-3 mt-4">
+                <img src="images/p2.png" class="img-fluid">
+                  </div> 
+            <div class="col-sm-3 mt-4">
+                  <img src="images/p3.png" class="img-fluid">
+            </div>
+            <div class="col-sm-3 mt-4">
+                <img src="images/p4.png" class="img-fluid">
+            </div> 
+      </div>
+  </div>
+
+
+             <!-- Footer Section Begin -->   
+    <a href="contact"></a>
+    <footer class="footer-section spad">
+        <div class="container">
+            <div class="newslatter-form">
+                <div class="row ">
+                    <div class="col-lg-12">
+                        <form action="#">
+                            <input type="text" placeholder="Your email address">
+                            <button type="submit">Subscribe to our newsletter</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-widget">
+                <div class="row p-5">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h4>About us</h4>
+                            <ul>
+                                <li>About Us</li>
+                                <li>Shipping</li>
+                                <li>Contact Us</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h4>Customer Care</h4>
+                            <ul>
+                                <li>Search</li>
+                                <li>Privacy Policy</li>
+                                <li>Shipping & Delivery</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h4>Our Services</h4>
+                            <ul>
+                                <li>Free Shipping</li>
+                                <li>Free Returnes</li>
+                                <li>Our Franchising</li>
+                                <li>Terms and conditions</li>
+                                <li>Privacy Policy</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h4>Information</h4>
+                            <ul>
+                                <li>Payment methods</li>
+                                <li>Times and shipping costs</li>
+                                <li>Product Returns</li>
+                                <li>Shipping methods</li>
+                                <li>Conformity of the products</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+      <div class="social-links-warp"> 
+        <div class="container text-center">
+          <div class="social-links">
+            <a href="https://instagram.com/victorderek1" class="instagram"><i class="fab fa-instagram"></i><span>instagram</span></a>
+            <a href="https://www.facebook.com/victor.derek.509" class="facebook"><i class="fab fa-facebook"></i><span>facebook</span></a> 
+            <a href="https://twitter.com/VictorDerek_" class="twitter"><i class="fab fa-twitter"></i><span>twitter </span></a> 
+            <p class="text-white mt-4">This site is Made By victor Derek</p>
+          </div>
+        </div> 
+    </div>
+    </footer>
+
+    <!-- Footer Section End -->
+
+
+    <script type="text/javascript" src="res/bootstrap/js/popper.js"></script>
+    <script type="text/javascript" src="res/bootstrap/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap/js/bootstrap.js"></script>
+    <script src="res/js/app.js"></script>
+    
+</body>
+</html>
