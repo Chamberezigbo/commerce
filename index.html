@@ -8,9 +8,47 @@
   	<link rel="stylesheet" href="res/fontawesome/css/all.css">
   	<link rel="stylesheet" href="res/css/style.css">  
 </head>     
-<body>   
+<body> 
+  
+  <div id="checkout" class="my-space d-none">
+    <div class="container" >
+        <div class="row bg-success  text-white p-3">
+            <div class="col-sm-6 col-md-6 col-lg-6">  
+                <div>
+                    <h3 class="text-center">Thank You For Your Patronage.. Proceed to checkout</h3>
+                </div>
+                <div id="checkoutItem">
 
-  <!-- navbar --> 
+                  <div>
+                    <h4>Total Price: <span id="totalPrice">...</span></h4>
+                    <h4>Total Quantity: <span id="totalQuantity">...</span></h4>
+                  </div>
+                  <div id="bill" class="mt-5 ">
+                    <h4>Enter Billing Address</h4>
+                    <form>
+                      <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" class="form-control" id="checkoutName" >
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Enter Address</label>
+                        <textarea name="" id="checkoutAddress" cols="3" rows=3 class="form-control"></textarea>
+                      </div>
+                      <div class="text-center">
+                        <button type="button" class="btn my-btnColor text-white">Proceed to payment</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 text-center">
+              <h3>PAYPAL  HERE</h3>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="mainbody" id="mainbody">
+    <!-- navbar --> 
 	
     <nav class="navbar navbar-expand-lg navbar-light nav-bg fixed-top shadow">
           <a class="navbar-brand ml-sm-3" href="#">
@@ -50,7 +88,7 @@
                 <a class="nav-link ml-sm-3" href="#contact">Contact</a>
               </li>
               <li class="nav-item">
-               <a href="#" class=" nav-link ml-sm-3 text-white font-weight-bold"><i id="cart" class="fas fa-cart-plus text-dark">0</i></a>
+               <a href="#" class=" nav-link ml-sm-3 text-white font-weight-bold" onclick="showCart()"><i id="cart" class="fas fa-cart-plus text-dark">0</i></a>
               </li>
             </ul>
 
@@ -66,7 +104,7 @@
     </nav>
 
    
-  <!--navbar---->
+    <!--navbar---->
 
   
       <div id="carouselExampleControls" class="carousel slide mt-5" data-mdb-ride="carousel">  
@@ -97,7 +135,7 @@
                       <i class="fas fa-star display-6 text-info"></i>
                       <i class="fas fa-star display-6 text-info"></i>
                       <p>$ <span id="price">17.20</span> </p>
-                      <button class="btn btn-outline-dark my-2 my-sm-0 bg-light" type="submit" onclick="sample()">Add to cart</button>
+                      <button class="btn btn-outline-dark my-2 my-sm-0 bg-light" type="submit" onclick="cart(111,'Vintage shirt',17.20)">Add to cart</button>
                     </div>
                     <div class="col-sm-3">
                          <img src="images/c6.jpeg" class="img-fluid">
@@ -107,7 +145,7 @@
                          <i class="fas fa-star display-6 text-info"></i>
                          <i class="fas fa-star display-6 text-info"></i>
                          <p>$ <span id="price">20.20</span> </p>
-                         <button class="btn btn-outline-dark my-2 my-sm-0 bg-light" type="submit" onclick="sample()">Add to cart</button>
+                         <button class="btn btn-outline-dark my-2 my-sm-0 bg-light" type="submit" onclick="cart(112,'Gradient shirt',20.20)">Add to cart</button>
                     </div>
                     <div class="col-sm-3">
                          <img src="images/c4.jpg" class="img-fluid">
@@ -131,7 +169,7 @@
                     </div>
               </div>
           </div>
-     
+          
           <div class="container">
              <div class="row mb-5">
                   <div class="col-sm-3">
@@ -179,13 +217,13 @@
 
   
 
-  <div id="carouselExampleControls" class="carousel slide mt-5" data-mdb-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide mt-5" data-mdb-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="images/group2.jpg" class="d-block w-100" alt="..."/>
           </div>
         </div>
-  </div>
+    </div>
           
 
       <div class="ml-sm-5 mt-5 mb-3 d-flex justify-content-between container">
@@ -377,11 +415,11 @@
             <p class="text-white mt-4">This site is Made By victor Derek</p>
           </div>
         </div> 
-    </div>
+      </div>
     </footer>
 
     <!-- Footer Section End -->
-
+  </div>
 
     <script type="text/javascript" src="res/bootstrap/js/popper.js"></script>
     <script type="text/javascript" src="res/bootstrap/js/jquery-3.2.1.min.js"></script>
