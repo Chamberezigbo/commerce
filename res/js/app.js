@@ -118,7 +118,6 @@ function payment() {
  
    return false ;
 }
-
 // paystack //
 
 
